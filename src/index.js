@@ -2,7 +2,7 @@ module.exports = function check(str, bracketsConfig) {
   
   let stack = [];
   let brackets = [];
-  let pairsOfBrackets = new Obj();
+  let pairsOfBrackets = new Object();
   for (let i = 0; i < bracketsConfig.length; i++) {
       pairsOfBrackets[bracketsConfig[i][1]] = bracketsConfig[i][0];
       brackets.push(bracketsConfig[i][0]);
